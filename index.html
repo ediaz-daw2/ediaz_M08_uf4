@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+    crossorigin="anonymous"
+  />
+    <link rel="stylesheet" href="css/custom.css">
+    <title>AEA-7 Calculadora</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <!-- PRIMERA FILA -->
+            <input class="col-12" type="text" name="sortida" id="id_sortida" value="0">
+
+            <!-- SEGUNDA FILA -->
+            <input class="col-3" type="button" name="uno" id="id_uno" value="1" onclick="introVal('1')">
+            <input class="col-3" type="button" name="dos" id="id_dos" value="2" onclick="introVal('2')">
+            <input class="col-3" type="button" name="tres" id="id_tres" value="3" onclick="introVal('3')">
+            <input class="col-3" type="button" name="suma" id="id_suma" value="+" onclick="introVal('+')">
+
+            <!-- TERCERA FILA -->
+            <input class="col-3" type="button" name="cuatro" id="id_cuatro" value="4" onclick="introVal('4')">
+            <input class="col-3" type="button" name="cinco" id="id_cinco" value="5" onclick="introVal('5')">
+            <input class="col-3" type="button" name="seis" id="id_seis" value="6" onclick="introVal('6')">
+            <input class="col-3" type="button" name="resta" id="id_resta" value="-" onclick="introVal('-')">
+
+            <!-- CUARTA FILA -->
+            <input class="col-3" type="button" name="siete" id="id_siete" value="7" onclick="introVal('7')">
+            <input class="col-3" type="button" name="ocho" id="id_ocho" value="8" onclick="introVal('8')">
+            <input class="col-3" type="button" name="nueve" id="id_nueve" value="9" onclick="introVal('9')">
+            <input class="col-3" type="button" name="multi" id="id_multi" value="*" onclick="introVal('*')">
+
+            <!-- QUINTA FILA -->
+            <input class="col-3" type="button" name="coma" id="id_coma" value="," onclick="introVal('.')">
+            <input class="col-3" type="button" name="cero" id="id_cero" value="0" onclick="introVal('0')">
+            <input class="col-3" type="button" name="c" id="id_c" value="C" onclick="esborrarVal('C')">
+            <input class="col-3" type="button" name="divi" id="id_divi" value="/" onclick="introVal('/')">
+
+            <!-- SEXTA   FILA -->
+            <input class="col-12" type="button" name="igual" id="id_igual" value="=" onclick="calcularResu()">
+        </div>
+    </div>
+    <script src="js/app.js"></script>
+</body>
+</html>
+<!-- CALCULADORA
+
+-->
